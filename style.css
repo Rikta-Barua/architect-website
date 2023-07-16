@@ -2,5 +2,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@400;700;800&display=swap');
 *{
     font-family: 'Work Sans', sans-serif;
+    /* margin:0;
+    padding:0; */
+}
+/* header styles */
+header{
+    background-color: rgb(244, 236, 228);
+    padding:50px 240px;
+   
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+nav > ul{
+    display:flex;
+}
+nav li{
+    list-style:none;
+    margin-right:30px;
+    font-weight: 500;
+    font-size:1rem;
+}
+nav li a{
+    text-decoration:none;
+    color:rgb(61, 56, 56);
+
+}
+/* banner styles */
+.banner-content{
+    max-width:800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    font-size:4rem;
+    font-weight:700;
+}
+.banner-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color:gray;
+
+}
+.btn-primary{
+    border-radius: 8px;
+    color:#FFF;
+    background: #FF900E;
+    padding:20px 25px;
+    border:0;
+    font-size: 1.25rem;
+    cursor:pointer;
+}
+.banner-img{
+    width: 100%;
+    margin-top:15px;
+  
+}
+/* Responsive styles */
+/* small device */
+@media screen and (max-width:576px){
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* medium device */
+@media screen and (min-width:576px) and (max-width:960px){
+    header{
+        padding:50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
 }
     
